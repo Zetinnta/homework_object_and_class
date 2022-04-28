@@ -25,7 +25,7 @@ public class Main {
         Author thirdAuthor = new Author("Jonathan", "Safran Foer");
         Book thirdBook = new Book("Everything Is Illuminated", 2004, thirdAuthor);
         System.out.println("Author Jonathan Safran Foer is already in the database? - " + thirdAuthor.equals(firstAuthor));
-        System.out.println("'" + "Everything is Illuminated" + "' with the same author is already in the database? - " + thirdBook.equals(firstBook));
+        System.out.println("'" + "Everything is Illuminated" + "' with the same author is already in the database (assuming it should be the same year)? - " + thirdBook.equals(firstBook));
     }
 
     public static void delimiter() {

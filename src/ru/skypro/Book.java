@@ -3,9 +3,9 @@ package ru.skypro;
 import java.util.Objects;
 
 public class Book {
-    String name;
-    int publicationYear;
-    Author author;
+    private String name;
+    private int publicationYear;
+    private Author author;
 
     public Book(String name, int publicationYear, Author author) {
         this.name = name;
@@ -43,7 +43,7 @@ public class Book {
             return false;
         }
         Book b2 = (Book) other;
-        return (name.equals(b2.name) && author.equals(b2.author));
+        return (name.equals(b2.name) && author.equals(b2.author) && name.equals(b2.publicationYear));
     }
 
     @Override
